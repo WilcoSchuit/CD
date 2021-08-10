@@ -1,7 +1,8 @@
-from cd import index, cow
+import cd
 
 def test_index():
-    assert index() == 'Hello, world!'
+    assert cd.index() == 'Hello, world!'
 
-def test_user():
-    assert cow() == 'MOoooOo!'
+def test_cow():
+    assert cd.cow() == 'MOoooOo!'
+    
