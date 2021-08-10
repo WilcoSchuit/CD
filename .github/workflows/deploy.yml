@@ -3,13 +3,13 @@ name: Build & Deploy
 on:
   push:
     branches: [master]
-    
+ 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps: 
-      - name:
-        uses:
+      - name: Checkout repository
+        uses: actions/checkout@v2
         with:
           host: ${{secrets.SSH_HOST}} # IP adress of the server to ssh into
           key: ${{secrets.SSH_KEY}} # Private or public key of the server
