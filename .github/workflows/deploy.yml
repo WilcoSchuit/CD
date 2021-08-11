@@ -9,6 +9,8 @@ jobs:
     steps: 
       - name: Checkout
         uses: actions/checkout@v2
+      - name: Deploy Flask app
+        uses: appleboy/ssh-action@v0.1.2
         with:
           host: ${{secrets.SSH_HOST}} # IP adress of the server to ssh into
           key: ${{secrets.SSH_KEY}} # Private or public key of the server
