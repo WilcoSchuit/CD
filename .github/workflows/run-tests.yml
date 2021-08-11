@@ -1,8 +1,10 @@
 name: Run tests
 
 # Run this workflow whenever something new is pushed.
-on: push
-  branches: [ main ]
+on: 
+  push:
+    branches: [ main ]
+    
 jobs:
   run-tests:
     runs-on: ubuntu-20.04
