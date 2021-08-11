@@ -15,7 +15,7 @@ jobs:
           host: ${{secrets.SSH_HOST}} # IP adress of the server to ssh into
           key: ${{secrets.SSH_KEY}} # Private or public key of the server
           username: ${{secrets.SSH_USERNAME}} # User of the server to ssh into
-          
+        
           script: |
             mkdir assignment_cd #create folder to deploy on the server
             cd assignment_cd #enter folder
