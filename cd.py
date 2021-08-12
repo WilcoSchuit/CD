@@ -12,3 +12,6 @@ def index():
 @app.route('/cat')
 def cat():
     return 'Meow!'
+
+if __name__ == "__main__":
+    app.run()
