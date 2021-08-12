@@ -10,7 +10,7 @@
       - SSH_HOST: containing the servers IP adress
       - SSH_KEY: containing the public server key
       - SSH_USERNAME: containing the username, in this case root
-      - 
+      
   3. Workflow
  
      Created a workflow containing two jobs: 
