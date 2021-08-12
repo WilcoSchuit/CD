@@ -37,6 +37,7 @@ jobs:
           username: ${{secrets.SSH_USERNAME}} # User of the server to ssh into
         
           script: |
+            cd ..
             cd var/www/
             mkdir assignment_cd #create folder to deploy on the server
             cd assignment_cd #enter folder
