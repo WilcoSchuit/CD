@@ -5,7 +5,7 @@
   3. Workflow
 
 # Problems:
-  1. App deployed on VPS after pytest failed:
+  1. App deployed on VPS after pytest failed
   
     Solution:
       Added the following job to test&deploy.yml:
@@ -16,7 +16,7 @@
   
       This job will only start if all the steps in run-tests have succeeded.
   
-  2. Unable to clone repository from GitHub on VPS if one already exists:
+  2. Unable to clone repository from GitHub on VPS if one already exists
   
     Solution:
       Added the following line to script in test&deploy.yml: 
@@ -24,7 +24,7 @@
    
       This will remove a previous repository if one already exists on VPS.
    
-  3. Unable to update app:
+  3. Unable to update app
  
     Solution:
       Added the following lines to script in test&deploy.yml:
