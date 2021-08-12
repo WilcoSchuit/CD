@@ -39,6 +39,7 @@ jobs:
           script: |
             cd ..
             cd var/www/
+            rm -r assignment_cd #remove previous repository if it exists
             mkdir assignment_cd #create folder to deploy on the server
             cd assignment_cd #enter folder
             git clone git@github.com:WilcoSchuit/CD.git #Clone repository into folder
