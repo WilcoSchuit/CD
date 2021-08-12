@@ -23,7 +23,7 @@ jobs:
         run: pytest
         
   deploy:
-    needs: run-tests
+    needs: run-tests #if run-tests succeeds, start deploy
     runs-on: ubuntu-latest
     
     steps:
@@ -37,6 +37,7 @@ jobs:
           username: ${{secrets.SSH_USERNAME}} # User of the server to ssh into
         
           script: |
+            cd var/www/
             mkdir assignment_cd #create folder to deploy on the server
             cd assignment_cd #enter folder
             git clone git@github.com:WilcoSchuit/CD.git #Clone repository into folder
