@@ -56,6 +56,6 @@
         systemctl restart nginx #restart nginx
         systemctl enable --now cd #enable cd.service
         
-      This stops gunicorn from running, restarts nginx en enables cd.service. These lines combined will show the updated app in the browser.
+        This stops gunicorn from running, restarts nginx en enables cd.service. These lines combined will show the updated app in the browser.
       
       
