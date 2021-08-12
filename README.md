@@ -6,12 +6,13 @@
     
   2. Secrets
 
-    Added the following secrets to the repository to enable SSH access: 
-    - SSH_HOST: containing the servers IP adress
-    - SSH_KEY: containing the public server key
-    - SSH_USERNAME: containing the username, in this case root
+      Added the following secrets to the repository to enable SSH access: 
+      - SSH_HOST: containing the servers IP adress
+      - SSH_KEY: containing the public server key
+      - SSH_USERNAME: containing the username, in this case root
+      - 
   3. Workflow
-  4. 
+ 
      Created a workflow containing two jobs: 
       1. run-tests: which installs the dependencies from requirements.txt and runs pytest.
       2. deploy: starts when all steps from run-tests are successfully completed, performs the following actions:
