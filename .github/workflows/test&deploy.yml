@@ -43,9 +43,9 @@ jobs:
             mkdir assignment_cd #create folder to deploy on the server
             cd assignment_cd #enter folder
             git clone https://github.com/WilcoSchuit/CD.git #Clone repository into folder
-            pkill gunicorn
-            systemctl restart nginx
-            systemctl enable --now cd
+            pkill gunicorn #stop gunicorn from running to reset
+            systemctl restart nginx #restart nginx
+            systemctl enable --now cd #enable cd.service
             echo 'Deployment successful to DigitalOcean' #Message to be displayed when deployment is successfull
             
 
