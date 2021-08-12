@@ -43,6 +43,5 @@ jobs:
             mkdir assignment_cd #create folder to deploy on the server
             cd assignment_cd #enter folder
             git clone git@github.com:WilcoSchuit/CD.git #Clone repository into folder
-            git clone CD.git #clone from bare repository
             echo 'Deployment successful to DigitalOcean' #Message to be displayed when deployment is successfull
 
