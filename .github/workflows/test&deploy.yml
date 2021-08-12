@@ -43,4 +43,4 @@ jobs:
             cd assignment_cd #enter folder
             git clone git@github.com:WilcoSchuit/CD.git #Clone repository into folder
             echo 'Deployment successful to DigitalOcean' #Message to be displayed when deployment is successfull
-            python cd.py #run app
+
