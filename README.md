@@ -2,7 +2,7 @@
 
   1. Deploy keys
     
-    Generated a public server key on the VPS with ssh-keygen, added it to SSH keys on GitHub account and to nano .ssh/authorized_keys. Used chmod 700 .ssh/authorized_keys to           give permission to perform ssh tasks. This enables the repository to be cloned from GitHub to the server.  
+      Generated a public server key on the VPS with ssh-keygen, added it to SSH keys on GitHub account and to nano .ssh/authorized_keys. Used chmod 700 .ssh/authorized_keys to           give permission to perform ssh tasks. This enables the repository to be cloned from GitHub to the server.  
     
   2. Secrets
 
@@ -11,6 +11,7 @@
     - SSH_KEY: containing the public server key
     - SSH_USERNAME: containing the username, in this case root
   3. Workflow
+  4. 
      Created a workflow containing two jobs: 
       1. run-tests: which installs the dependencies from requirements.txt and runs pytest.
       2. deploy: starts when all steps from run-tests are successfully completed, performs the following actions:
