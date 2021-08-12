@@ -20,6 +20,7 @@
   
     Solution:
       Added the following line to script in test&deploy.yml: 
+      
         rm -r assignment_cd #remove previous repository if it exists
    
       This will remove a previous repository if one already exists on VPS.
@@ -28,6 +29,7 @@
  
     Solution:
       Added the following lines to script in test&deploy.yml:
+      
         pkill gunicorn #stop gunicorn from running to reset
         systemctl restart nginx #restart nginx
         systemctl enable --now cd #enable cd.service
