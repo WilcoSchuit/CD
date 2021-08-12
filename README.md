@@ -1,7 +1,7 @@
 # Components:
 
   1. Deploy keys:
-      Generated a public server key on the VPS with ssh-keygen, added it to SSH keys on GitHub account and to nano .ssh/authorized_keys. Used chmod 700 .ssh/authorized_keys to           give permission to perform ssh tasks. This enables the repository to be cloned from GitHub to the server.  
+    Generated a public server key on the VPS with ssh-keygen, added it to SSH keys on GitHub account and to nano .ssh/authorized_keys. Used chmod 700 .ssh/authorized_keys to           give permission to perform ssh tasks. This enables the repository to be cloned from GitHub to the server.  
   3. Secrets:
       Added the following secrets to the repository to enable SSH access: 
       - SSH_HOST: containing the servers IP adress
