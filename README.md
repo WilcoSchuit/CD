@@ -5,7 +5,7 @@
   3. Workflow
 
 # Problems:
-  1. App deployed on VPS after pytest failed
+  1. App deployed on VPS even after pytest failed
   
     Solution:
       Added the following job to test&deploy.yml:
